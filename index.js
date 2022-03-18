@@ -12,7 +12,8 @@ const PORT = process.env.port || 9000;
 const app = express();
 
 // Middlewares
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://challenge-531b6.web.app" })); // for online
+// app.use(cors({ origin: "*" })); // for offile
 app.use(express.json());
 // API routes
 app.get("/", (req, res) => {
