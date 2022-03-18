@@ -12,7 +12,7 @@ const PORT = process.env.port || 9000;
 const app = express();
 
 // Middlewares
-app.use(cors({ origin: true }));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 // API routes
 app.get("/", (req, res) => {
